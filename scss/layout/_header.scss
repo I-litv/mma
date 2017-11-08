@@ -5,7 +5,10 @@
 .s-header__navbar {
 	background: transparent;
 	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	@include max-height(1.125rem);
+	max-height: 100px;
 }
+
 
 /* Container
 ------------------------------ */
@@ -45,7 +48,7 @@
 
   &-link {
     display: inline-block;
-    padding: 1rem 0;
+    padding: 0rem 0;
 
     @include hover-focus {
       text-decoration: none;
@@ -180,7 +183,7 @@
 /* Nav
 ------------------------------ */
 .s-header__nav {
-	height: 100%;
+	height: 100px;
 	padding: 7.5rem 0;
 }
 
